@@ -1,0 +1,264 @@
+﻿@model List<GuestMessage>
+@{
+    ViewData["Title"] = "Leoth";
+}
+
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#music">Music</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#guestbook">Guestbook</a>
+</nav>
+
+<div class="now-playing">
+
+    <span class="np-label">
+        Now Playing 🎧
+    </span>
+
+    <span id="nowPlayingTitle">
+        Nothing
+    </span>
+
+</div>
+
+<section id="home" class="section">
+    <img src="/images/avatar.jpg" class="avatar" />
+
+    <h1>Leoth</h1>
+
+    <p class="quote">
+        A small digital corner on the internet.
+    </p>
+
+    <div class="links">
+        <a href="#">Facebook</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</section>
+
+<section id="music" class="section">
+
+    <h2>Favourite Music</h2>
+
+    <div class="music-box">
+
+        <div class="music-list">
+
+            <!-- bài nhạc -->
+            <div class="music-item">
+
+                <button class="play-btn"
+                        onclick="toggleMusic('music1', this)"
+                        data-title="Head In The Clouds - Hayd">
+                    ▶
+                </button>
+
+                <div class="music-content">
+
+                    <div class="music-title">
+
+                        <span class="scroll-text">
+                            Head In The Clouds - Hayd
+                        </span>
+
+                        <span class="music-wave">
+                            ♫♫♫
+                        </span>
+
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+
+                </div>
+
+                <a class="music-link"
+                   href="https://youtube.com/"
+                   target="_blank">
+                    ↗
+                </a>
+
+                <audio id="music1"
+                       src="/music/head_in_the_clouds.mp3"> </audio>
+            </div>
+
+            <!-- MUSIC ITEM -->
+            <div class="music-item">
+                <button class="play-btn" onclick="toggleMusic('musicX', this)" data-title="Song Name - Artist">▶</button>
+
+                <div class="music-content">
+                    <div class="music-title">
+                        <span class="scroll-text">Song Name - Artist</span>
+                        <span class="music-wave">♫♫♫</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress"></div></div>
+                </div>
+
+                <a class="music-link" href="https://youtube.com/" target="_blank">↗</a>
+
+                <audio id="musicX" src="/music/song_file.mp3"></audio>
+            </div>
+            <!-- MUSIC ITEM -->
+            <div class="music-item">
+                <button class="play-btn" onclick="toggleMusic('musicX', this)" data-title="Song Name - Artist">▶</button>
+
+                <div class="music-content">
+                    <div class="music-title">
+                        <span class="scroll-text">Song Name - Artist</span>
+                        <span class="music-wave">♫♫♫</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress"></div></div>
+                </div>
+
+                <a class="music-link" href="https://youtube.com/" target="_blank">↗</a>
+
+                <audio id="musicX" src="/music/song_file.mp3"></audio>
+            </div>
+            <!-- MUSIC ITEM -->
+            <div class="music-item">
+                <button class="play-btn" onclick="toggleMusic('musicX', this)" data-title="Song Name - Artist">▶</button>
+
+                <div class="music-content">
+                    <div class="music-title">
+                        <span class="scroll-text">Song Name - Artist</span>
+                        <span class="music-wave">♫♫♫</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress"></div></div>
+                </div>
+
+                <a class="music-link" href="https://youtube.com/" target="_blank">↗</a>
+
+                <audio id="musicX" src="/music/song_file.mp3"></audio>
+            </div>
+            <!-- MUSIC ITEM -->
+            <div class="music-item">
+                <button class="play-btn" onclick="toggleMusic('musicX', this)" data-title="Song Name - Artist">▶</button>
+
+                <div class="music-content">
+                    <div class="music-title">
+                        <span class="scroll-text">Song Name - Artist</span>
+                        <span class="music-wave">♫♫♫</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress"></div></div>
+                </div>
+
+                <a class="music-link" href="https://youtube.com/" target="_blank">↗</a>
+
+                <audio id="musicX" src="/music/song_file.mp3"></audio>
+            </div>
+            <!-- MUSIC ITEM -->
+            <div class="music-item">
+                <button class="play-btn" onclick="toggleMusic('musicX', this)" data-title="Song Name - Artist">▶</button>
+
+                <div class="music-content">
+                    <div class="music-title">
+                        <span class="scroll-text">Song Name - Artist</span>
+                        <span class="music-wave">♫♫♫</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress"></div></div>
+                </div>
+
+                <a class="music-link" href="https://youtube.com/" target="_blank">↗</a>
+
+                <audio id="musicX" src="/music/song_file.mp3"></audio>
+            </div>
+            <!-- MUSIC ITEM -->
+            <div class="music-item">
+                <button class="play-btn" onclick="toggleMusic('musicX', this)" data-title="Song Name - Artist">▶</button>
+
+                <div class="music-content">
+                    <div class="music-title">
+                        <span class="scroll-text">Song Name - Artist</span>
+                        <span class="music-wave">♫♫♫</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress"></div></div>
+                </div>
+
+                <a class="music-link" href="https://youtube.com/" target="_blank">↗</a>
+
+                <audio id="musicX" src="/music/song_file.mp3"></audio>
+            </div>
+
+            <!---->
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="section">
+
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+
+        <img src="/images/pic1.jpg" onclick="openImage(this)">
+        <img src="/images/pic2.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+        <img src="/images/pic3.jpg" onclick="openImage(this)">
+
+    </div>
+
+</section>
+
+
+<!-- lightbox -->
+
+<div id="imageViewer" onclick="closeImage()">
+
+    <img id="viewerImg">
+
+</div>
+                        
+
+<section id="guestbook" class="section">
+
+    <h2>Guestbook</h2>
+
+    <!-- Form gửi message -->
+    <form method="post" action="/Guestbook/Add">
+
+        <input name="name" placeholder="Your name" />
+
+        <textarea name="message"
+                  placeholder="Leave a message..."></textarea>
+
+        <button type="submit">
+            Send
+        </button>
+
+    </form>
+
+    <!-- Danh sách message -->
+    <div id="guestMessages">
+
+        @foreach (var m in Model)
+        {
+            <div class="guest-item">
+
+                <b>@m.Name</b>
+
+                <p>@m.Message</p>
+
+            </div>
+        }
+
+    </div>
+
+</section>
